@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F159BD57F602BFFAB9C8526 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A391737A4A718AA3441460F4 /* libPods.a */; };
 		B5780A7F1D4098DF003B3CAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5780A7E1D4098DF003B3CAE /* main.m */; };
 		B5780A821D4098DF003B3CAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5780A811D4098DF003B3CAE /* AppDelegate.m */; };
 		B5780A851D4098DF003B3CAE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5780A841D4098DF003B3CAE /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		B5780A8D1D4098DF003B3CAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5780A8B1D4098DF003B3CAE /* LaunchScreen.storyboard */; };
 		B5780A981D4098DF003B3CAE /* CocoaPods_____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5780A971D4098DF003B3CAE /* CocoaPods_____Tests.m */; };
 		B5780AA31D4098DF003B3CAE /* CocoaPods_____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5780AA21D4098DF003B3CAE /* CocoaPods_____UITests.m */; };
+		B5780AB11D40A127003B3CAE /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B5780AB01D40A127003B3CAE /* libsqlite3.0.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00966A088A1013252A7519F4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A391737A4A718AA3441460F4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5780A7A1D4098DF003B3CAE /* CocoaPods集成三方库.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CocoaPods集成三方库.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5780A7E1D4098DF003B3CAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B5780A801D4098DF003B3CAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		B5780A9E1D4098DF003B3CAE /* CocoaPods集成三方库UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CocoaPods集成三方库UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5780AA21D4098DF003B3CAE /* CocoaPods_____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CocoaPods_____UITests.m"; sourceTree = "<group>"; };
 		B5780AA41D4098DF003B3CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5780AB01D40A127003B3CAE /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		D244927C6DD4910A541A4D34 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5780AB11D40A127003B3CAE /* libsqlite3.0.tbd in Frameworks */,
+				8F159BD57F602BFFAB9C8526 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		434AE6C393652794BA6377A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D244927C6DD4910A541A4D34 /* Pods.debug.xcconfig */,
+				00966A088A1013252A7519F4 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B5780A711D4098DF003B3CAE = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +102,8 @@
 				B5780A961D4098DF003B3CAE /* CocoaPods集成三方库Tests */,
 				B5780AA11D4098DF003B3CAE /* CocoaPods集成三方库UITests */,
 				B5780A7B1D4098DF003B3CAE /* Products */,
+				434AE6C393652794BA6377A4 /* Pods */,
+				F64B558553AFFCFEC14901AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +159,15 @@
 			path = "CocoaPods集成三方库UITests";
 			sourceTree = "<group>";
 		};
+		F64B558553AFFCFEC14901AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5780AB01D40A127003B3CAE /* libsqlite3.0.tbd */,
+				A391737A4A718AA3441460F4 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5780AA71D4098DF003B3CAE /* Build configuration list for PBXNativeTarget "CocoaPods集成三方库" */;
 			buildPhases = (
+				5DBD3C721CC51B04689F9F63 /* Check Pods Manifest.lock */,
 				B5780A761D4098DF003B3CAE /* Sources */,
 				B5780A771D4098DF003B3CAE /* Frameworks */,
 				B5780A781D4098DF003B3CAE /* Resources */,
+				9125DBF7DCD328B57E075C2B /* Embed Pods Frameworks */,
+				CEE62DD07393A5EEEBBD77ED /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +295,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DBD3C721CC51B04689F9F63 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9125DBF7DCD328B57E075C2B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEE62DD07393A5EEEBBD77ED /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B5780A761D4098DF003B3CAE /* Sources */ = {
@@ -413,6 +492,7 @@
 		};
 		B5780AA81D4098DF003B3CAE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D244927C6DD4910A541A4D34 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "CocoaPods集成三方库/Info.plist";
@@ -424,6 +504,7 @@
 		};
 		B5780AA91D4098DF003B3CAE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00966A088A1013252A7519F4 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "CocoaPods集成三方库/Info.plist";
@@ -498,6 +579,7 @@
 				B5780AA91D4098DF003B3CAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5780AAA1D4098DF003B3CAE /* Build configuration list for PBXNativeTarget "CocoaPods集成三方库Tests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +588,7 @@
 				B5780AAC1D4098DF003B3CAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5780AAD1D4098DF003B3CAE /* Build configuration list for PBXNativeTarget "CocoaPods集成三方库UITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +597,7 @@
 				B5780AAF1D4098DF003B3CAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
